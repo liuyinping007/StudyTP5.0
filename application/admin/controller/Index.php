@@ -7,7 +7,13 @@ class Index extends Controller
     {
        // $request = \think\Request::instance();
        // echo $request->root() ;
-       echo $_SERVER['DOCUMENT_ROOT'];
+//        echo __DIR__;
+        
+        return $this->fetch();
+    }
+    
+    function welcome()
+    {
         return $this->fetch();
     }
 }
